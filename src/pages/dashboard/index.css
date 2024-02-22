@@ -1,0 +1,19 @@
+/* Layout */
+.HomePage,
+.DefaultPage,
+.SignInPage,
+.SignUpPage,
+.NotFoundPage,
+.ForgotPasswordPage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+}
+
+.content-container {
+	width: 80%; /* Adjust as necessary */
+	max-width: 600px; /* Define a maximum width for larger devices */
+}

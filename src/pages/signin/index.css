@@ -1,0 +1,47 @@
+/* Layout */
+.HomePage,
+.DefaultPage,
+.SignInPage,
+.SignUpPage,
+.NotFoundPage,
+.ForgotPasswordPage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+}
+
+.content-container {
+	width: 80%; /* Adjust as necessary */
+	max-width: 600px; /* Define a maximum width for larger devices */
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 200px; /* Adjust width as needed */
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-input input {
+  padding-right: 30px; /* Space for the eye button */
+}
+
+.password-input button {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+}
