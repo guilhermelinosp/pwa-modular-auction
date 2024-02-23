@@ -1,13 +1,13 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import './index.css';
+import './styles/global.css';
 
-import { DefaultPage } from './pages/default/default';
-import { ForgotPasswordPage } from './pages/forgotpassword/forgotpassword';
-import { HomePage } from './pages/home/home';
-import { SignInPage } from './pages/signin/signin';
-import { SignUpPage } from './pages/signup/signup';
+import { DefaultPage } from './pages/default';
+import { ForgotPasswordPage } from './pages/forgotpassword';
+import { HomePage } from './pages/home';
+import { SignInPage } from './pages/signin';
+import { SignUpPage } from './pages/signup';
 
 
 createRoot(document.getElementById('root')).render(

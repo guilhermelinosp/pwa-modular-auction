@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+import '../styles/dashboard.css';
 
 export const DashboardPage = () => (
   <div className='DashboardPage'>
