@@ -3,10 +3,10 @@ name: deploy-ci
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
-  deploy:
+  dynamic:
     runs-on: ubuntu-latest
 
     steps:
