@@ -1,26 +1,33 @@
 {
   "author": "guilhermelinosp",
   "name": "pwa-modular-auction",
-  "homepage": "/pwa-modular-auction",
   "version": "1.0.0",
   "private": true,
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.1",
+    "@testing-library/user-event": "^14.5.2",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
+    "react-modal": "^3.16.1",
     "react-router-dom": "^6.22.1",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.0"
+    "react-scripts": "^5.0.1",
+    "react-toastify": "^10.0.4",
+    "web-vitals": "^3.5.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "fix": "prettier . --write && eslint . --fix"
   },
   "eslintConfig": {
     "extends": [

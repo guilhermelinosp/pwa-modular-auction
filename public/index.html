@@ -1,44 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
     <!-- Configurações específicas para iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="Test App">
-    <link rel="apple-touch-icon" href="/logo192.png">
-    <link rel="mask-icon" href="/logo192.png" color="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Test App" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="mask-icon" href="/logo192.png" color="#000000" />
 
     <!-- Configurações específicas para Android -->
-    <meta name="theme-color" content="#000000">
+    <meta name="theme-color" content="#000000" />
 
     <!-- Configurações específicas para navegadores de desktop -->
-    <meta name="description" content="Descrição da sua aplicação">
-    <meta name="application-name" content="Test App">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/logo192.png">
-    <meta name="msapplication-navbutton-color" content="#000000">
-    <meta name="msapplication-starturl" content="/">
+    <meta name="description" content="Descrição da sua aplicação" />
+    <meta name="application-name" content="Test App" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/logo192.png" />
+    <meta name="msapplication-navbutton-color" content="#000000" />
+    <meta name="msapplication-starturl" content="/" />
 
     <title>React App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
+    <!-- Você pode incluir scripts para service workers ou outras funcionalidades aqui -->
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/service-worker.js')
+          navigator.serviceWorker
+            .register('/service-worker.js')
             .then(registration => {
-              console.log('Service Worker registrado com sucesso:', registration);
+              console.log(
+                'Service Worker registrado com sucesso:',
+                registration
+              )
             })
             .catch(error => {
-              console.error('Erro ao registrar Service Worker:', error);
-            });
-        });
+              console.error('Erro ao registrar Service Worker:', error)
+            })
+        })
       }
     </script>
   </body>

@@ -1,14 +1,13 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import './styles/global.css';
+import React from 'react'
+import {createRoot} from 'react-dom/client'
+import {Route, BrowserRouter as Router, Routes} from 'react-router-dom'
+import './styles/global.css'
 
-import { DefaultPage } from './pages/default';
-import { ForgotPasswordPage } from './pages/forgotpassword';
-import { HomePage } from './pages/home';
-import { SignInPage } from './pages/signin';
-import { SignUpPage } from './pages/signup';
-
+import {DefaultPage} from './pages/default'
+import {ForgotPasswordPage} from './pages/forgotpassword'
+import {HomePage} from './pages/home'
+import {SignInPage} from './pages/signin'
+import {SignUpPage} from './pages/signup'
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -22,4 +21,4 @@ createRoot(document.getElementById('root')).render(
       </Routes>
     </Router>
   </React.StrictMode>
-);
+)

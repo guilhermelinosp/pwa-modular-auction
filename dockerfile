@@ -1,15 +1,29 @@
-FROM node:20.11-alpine3.18
+FROM node:20.11-alpine3.18 AS builder
 
 WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-RUN npm install
+RUN npm i
 
 COPY . .
 
-EXPOSE 3000
+RUN npm run build
 
-CMD ["npm", "start"]
+# Stage 2: Serve the React application with Nginx
+FROM nginx:alpine
 
+# Remove default nginx website
+RUN rm -rf /usr/share/nginx/html/*
 
+# Copy built React app to nginx public folder
+COPY --from=builder /usr/src/app/build /usr/share/nginx/html
+
+# Copy nginx configuration
+COPY nginx.conf .
+
+# Expose port 80
+EXPOSE 80
+
+# Command to run nginx in the foreground
+CMD ["nginx", "-g", "daemon off;"]

@@ -9,9 +9,10 @@ If you believe you have found a security vulnerability in this project, please r
 2. **GPG Key**: If possible, use our [PGP key](link-to-pgp-key) to encrypt your email.
 
 3. **Information to Include**: Please include the following information in your email:
-    - A description of the vulnerability.
-    - Steps to reproduce the vulnerability.
-    - Any potential impact of the vulnerability.
+
+   - A description of the vulnerability.
+   - Steps to reproduce the vulnerability.
+   - Any potential impact of the vulnerability.
 
 4. **Responsiveness**: We will acknowledge your email within 48 hours and work on resolving the issue promptly.
 

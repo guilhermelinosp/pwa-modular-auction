@@ -1,6 +1,5 @@
 {
-  "name": "PWA",
-  "short_name": "PWA",
+  "name": "PWA React App",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
