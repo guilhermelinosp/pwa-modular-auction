@@ -1,4 +1,4 @@
-name: deploy-ci
+name: deploy ci
 
 on:
   push:
