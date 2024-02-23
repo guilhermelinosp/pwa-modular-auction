@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: container ci
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build-and-push:
+  dynamic:
     runs-on: ubuntu-latest
     permissions:
       packages: write
