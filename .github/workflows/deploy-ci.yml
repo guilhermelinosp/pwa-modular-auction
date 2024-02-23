@@ -1,4 +1,5 @@
 name: deploy-ci
+
 on:
   push:
     branches:
@@ -7,16 +8,23 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
         with:
-          node-version: '20.x'
-      - name: Build web-app
-        run: |
-          npm ci
-          npm run build
-      - name: Deploy to gh-pages
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build web app
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
