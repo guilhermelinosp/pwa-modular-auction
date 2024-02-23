@@ -1,7 +1,7 @@
 {
   "author": "guilhermelinosp",
   "name": "pwa-modular-auction",
-  "homepage": "https://guilhermelinosp.github.io/pwa-modular-auction/",
+  "homepage": "/pwa-modular-auction",
   "version": "1.0.0",
   "private": true,
   "main": "index.js",
