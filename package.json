@@ -1,14 +1,19 @@
 {
+  "author": "guilhermelinosp",
   "name": "pwa-modular-auction",
   "version": "1.0.0",
   "private": true,
+  "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.1",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -18,7 +23,8 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app"
+      "react-app",
+      "react-app/jest"
     ]
   },
   "browserslist": {

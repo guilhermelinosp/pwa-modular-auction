@@ -1,7 +1,19 @@
+const CACHE_NAME = 'pwa-cache';
+const urlsToCache = [
+  '/',
+  '/home',
+  '/signin',
+  '/signup',
+  '/forgotpassword',
+  '/resetpassword',
+  '/profile',
+  '/dashboard',
+];
+
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open("pwa-cache")
-      .then(cache => cache.addAll([  '/', '/next', '/signin', '/signup']))
+    caches.open(CACHE_NAME)
+      .then(cache => cache.addAll(urlsToCache))
   );
 });
 
