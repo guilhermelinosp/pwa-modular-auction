@@ -36,5 +36,5 @@ jobs:
           file: ./dockerfile
           push: true
           tags: |
-            ghcr.io/${{ github.actor }}/${{ github.repository }}:${{ github.ref }}
-            docker.io/${{ github.actor }}/${{ github.repository }}:${{ github.ref }}
+            ghcr.io/${{ github.actor }}/${{ github.repository }}:latest
+            docker.io/${{ github.actor }}/${{ github.repository }}:latest
