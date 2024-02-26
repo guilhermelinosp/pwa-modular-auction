@@ -1,7 +1,10 @@
 {
   "name": "PWA React App",
-  "start_url": "/",
+  "short_name": "PWA React App",
+  "id": "./",
+  "start_url": "./",
   "display": "standalone",
+  "prefer_related_applications": false,
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "icons": [
@@ -15,13 +18,5 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "scope": "/",
-  "orientation": "any",
-  "prefer_related_applications": false,
-  "related_applications": [],
-  "serviceworker": {
-    "src": "/service-worker.js",
-    "scope": "/"
-  }
+  ]
 }
