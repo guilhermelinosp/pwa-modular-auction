@@ -1,35 +1,18 @@
-name: deploy ci
-
 on:
   push:
     branches:
-      - main # ou o nome da sua branch principal
+      - "main" # change to the branch you wish to deploy from
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
-  dynamic:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '20'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build
-        run: npm run build
-
-      - name: Deploy
-        run: |
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-          git checkout gh-pages || git checkout --orphan gh-pages
-          git rm -rf .
-          mv build/* .
-          git add .
-          git commit -m "Deploy to GitHub Pages"
-          git push -f origin gh-pages
+    - id: build-publish
+      uses: bitovi/github-actions-react-to-github-pages@v1.2.2
+      with:
+        path: build # change to your build folder
