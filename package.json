@@ -1,4 +1,5 @@
 {
+  "homepage": "https://guilhermelinosp.github.io/pwa-modular-auction",
   "author": "guilhermelinosp",
   "name": "pwa-modular-auction",
   "version": "1.0.0",
@@ -27,7 +28,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "fix": "prettier . --write && eslint . --fix"
+    "fix": "prettier . --write && eslint . --fix",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -46,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
