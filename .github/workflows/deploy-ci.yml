@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: deploy ci
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main # ou o nome da sua branch principal
 
 jobs:
-  build-and-deploy:
+  dynamic:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
