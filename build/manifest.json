@@ -1,0 +1,22 @@
+{
+  "name": "PWA React App",
+  "short_name": "PWA React App",
+  "id": "./",
+  "start_url": "./",
+  "display": "standalone",
+  "prefer_related_applications": false,
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/logo192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
