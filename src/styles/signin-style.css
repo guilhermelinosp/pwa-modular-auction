@@ -1,0 +1,37 @@
+.SignInPage,
+.OtpPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.content-container {
+  width: 80%;
+  max-width: 600px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+.input-container button {
+  margin-bottom: 5px;
+}
+
+.input-container a {
+  margin-top: 5px;
+  text-align: center;
+  font: 1em sans-serif;
+}
