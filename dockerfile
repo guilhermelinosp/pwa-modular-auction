@@ -11,7 +11,7 @@ COPY . .
 RUN npm run build
 
 # Stage 2: Serve the React application with Nginx
-FROM nginx:alpine
+FROM nginx:1.25.4-alpine3.18
 
 # Remove default nginx website
 RUN rm -rf /usr/share/nginx/html/*
